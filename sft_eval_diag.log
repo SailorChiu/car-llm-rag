@@ -1,0 +1,131 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+加载 base: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<03:25,  1.64it/s]Loading weights:  40%|████      | 136/338 [00:00<00:00, 248.36it/s]Loading weights:  60%|██████    | 203/338 [00:00<00:00, 298.92it/s]Loading weights:  77%|███████▋  | 259/338 [00:01<00:00, 329.50it/s]Loading weights:  91%|█████████▏| 309/338 [00:01<00:00, 361.13it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 279.47it/s]
+加载 SFT 适配器: /home/kaifan/car-llm/sft/out
+
+============================================================
+val 集 54 条
+            完全匹配率      函数名(全名)      意图(宽口径)
+------------------------------------------------------------
+base           0.0%           0.0%           9.3%
+SFT           74.1%          88.9%          83.3%
+============================================================
+
+--- SFT 逐函数 函数名准确率 ---
+  climate.set_fan_speed     0/4
+  climate.set_power         5/5
+  climate.set_temperature   12/12
+  media.control             4/4
+  media.set_volume          5/5
+  navigation.navigate_to    6/6
+  phone.call                5/5
+  seat.set_heating          4/4
+  system.reject             2/4
+  window.set_position       5/5
+
+--- 函数名判错 6 条 ---
+  [推荐一部好看的电影]
+    gold: {"function":"system.reject","arguments":{"reason":"该请求超出车控指令范围"}}
+    pred: {"function":"media.play","arguments":{"source":"movie"}}
+  [风速设成1]
+    gold: {"function":"climate.set_fan_speed","arguments":{"level":1}}
+    pred: {"function":"climate.set_power","arguments":{"zone":"all","state":"on"}}
+  [风速设成2]
+    gold: {"function":"climate.set_fan_speed","arguments":{"level":2}}
+    pred: {"function":"climate.set_power","arguments":{"zone":"all","state":"on"}}
+  [世界杯谁夺冠了]
+    gold: {"function":"system.reject","arguments":{"reason":"该请求超出车控指令范围"}}
+    pred: {"function":"media.quit"}
+  [风速设成3]
+    gold: {"function":"climate.set_fan_speed","arguments":{"level":3}}
+    pred: {"function":"climate.set_power","arguments":{"zone":"all","state":"on"}}
+  [风速设成7]
+    gold: {"function":"climate.set_fan_speed","arguments":{"level":7}}
+    pred: {"function":"climate.set_power","arguments":{"zone":"all","state":"on"}}
+
+--- 函数对但参数错 8 条 ---
+  [把音量设成82]
+    gold: {"function":"media.set_volume","arguments":{"value":82}}
+    pred: {"function":"media.set_volume","arguments":{"percent":82}}
+  [把音量设成11]
+    gold: {"function":"media.set_volume","arguments":{"value":11}}
+    pred: {"function":"media.set_volume","arguments":{"percent":11}}
+  [切下一首]
+    gold: {"function":"media.control","arguments":{"action":"next"}}
+    pred: {"function":"media.control","arguments":{"action":"play"}}
+  [把音量设成45]
+    gold: {"function":"media.set_volume","arguments":{"value":45}}
+    pred: {"function":"media.set_volume","arguments":{"percent":45}}
+  [左后车窗降到75%]
+    gold: {"function":"window.set_position","arguments":{"window":"rear_left","percent":75}}
+    pred: {"function":"window.set_position","arguments":{"window":"rear_right","percent":75}}
+  [把音量设成85]
+    gold: {"function":"media.set_volume","arguments":{"value":85}}
+    pred: {"function":"media.set_volume","arguments":{"percent":85}}
+  [所有车窗都升上去]
+    gold: {"function":"window.set_position","arguments":{"window":"all","percent":0}}
+    pred: {"function":"window.set_position","arguments":{"window":"all","percent":100}}
+  [把音量设成55]
+    gold: {"function":"media.set_volume","arguments":{"value":55}}
+    pred: {"function":"media.set_volume","arguments":{"percent":55}}
+
+定性样例（前 6 条）:
+
+[副驾车窗降到67%]  gold: {"function":"window.set_position","arguments":{"window":"passenger","percent":67}}
+  base: ```json
+{
+  "function": "setDriverSideWindow",
+  "arguments": {
+    "windowNumber": 2,
+    "percentage": 67
+  }
+}
+```
+  SFT : {"function":"window.set_position","arguments":{"window":"passenger","percent":67}}
+
+[拨打张经理的电话]  gold: {"function":"phone.call","arguments":{"contact":"张经理"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "13800138000"
+  }
+}
+  SFT : {"function":"phone.call","arguments":{"contact":"张经理"}}
+
+[把音量设成82]  gold: {"function":"media.set_volume","arguments":{"value":82}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 82
+  }
+}
+  SFT : {"function":"media.set_volume","arguments":{"percent":82}}
+
+[拨打老婆的电话]  gold: {"function":"phone.call","arguments":{"contact":"老婆"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "老婆的电话号码"
+  }
+}
+  SFT : {"function":"phone.call","arguments":{"contact":"老婆"}}
+
+[去人民医院怎么走]  gold: {"function":"navigation.navigate_to","arguments":{"destination":"人民医院"}}
+  base: ```json
+{
+  "function": "navigate",
+  "arguments": {
+    "destination": "人民医院"
+  }
+}
+```
+  SFT : {"function":"navigation.navigate_to","arguments":{"destination":"人民医院"}}
+
+[把音量设成11]  gold: {"function":"media.set_volume","arguments":{"value":11}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 11
+  }
+}
+  SFT : {"function":"media.set_volume","arguments":{"percent":11}}

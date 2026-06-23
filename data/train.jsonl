@@ -1,0 +1,187 @@
+{"messages_user": "今天天气怎么样", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "把风开到2档", "func": "climate.set_fan_speed", "args": {"level": 2}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":2}}"}
+{"messages_user": "风量调到7档", "func": "climate.set_fan_speed", "args": {"level": 7}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":7}}"}
+{"messages_user": "打开主驾车窗", "func": "window.set_position", "args": {"window": "driver", "percent": 100}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"driver\",\"percent\":100}}"}
+{"messages_user": "讲个笑话", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "你叫什么名字", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "给客服打电话", "func": "phone.call", "args": {"contact": "客服"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"客服\"}}"}
+{"messages_user": "音量调到3", "func": "media.set_volume", "args": {"value": 3}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":3}}"}
+{"messages_user": "换下一首", "func": "media.control", "args": {"action": "next"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"next\"}}"}
+{"messages_user": "导航到火车站", "func": "navigation.navigate_to", "args": {"destination": "火车站"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"火车站\"}}"}
+{"messages_user": "音量设到30", "func": "media.set_volume", "args": {"value": 30}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":30}}"}
+{"messages_user": "右后车窗调到75%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 75}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":75}}"}
+{"messages_user": "下一首", "func": "media.control", "args": {"action": "next"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"next\"}}"}
+{"messages_user": "主驾这边调到21度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 21}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":21}}"}
+{"messages_user": "音量调到41", "func": "media.set_volume", "args": {"value": 41}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":41}}"}
+{"messages_user": "把温度调到23度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 23}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":23}}"}
+{"messages_user": "返回上一首", "func": "media.control", "args": {"action": "previous"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"previous\"}}"}
+{"messages_user": "把主驾车窗开到85%", "func": "window.set_position", "args": {"window": "driver", "percent": 85}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"driver\",\"percent\":85}}"}
+{"messages_user": "空调开到31度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 31}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":31}}"}
+{"messages_user": "音量设到55", "func": "media.set_volume", "args": {"value": 55}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":55}}"}
+{"messages_user": "副驾座椅加热0档", "func": "seat.set_heating", "args": {"seat": "passenger", "level": 0}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"passenger\",\"level\":0}}"}
+{"messages_user": "把风开到3档", "func": "climate.set_fan_speed", "args": {"level": 3}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":3}}"}
+{"messages_user": "空调开到19度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 19}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":19}}"}
+{"messages_user": "打电话给张经理", "func": "phone.call", "args": {"contact": "张经理"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"张经理\"}}"}
+{"messages_user": "把声音弄到5", "func": "media.set_volume", "args": {"value": 5}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":5}}"}
+{"messages_user": "右后车窗调到20%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 20}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":20}}"}
+{"messages_user": "副驾座椅加热3档", "func": "seat.set_heating", "args": {"seat": "passenger", "level": 3}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"passenger\",\"level\":3}}"}
+{"messages_user": "主驾座椅加热开到3档", "func": "seat.set_heating", "args": {"seat": "driver", "level": 3}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"driver\",\"level\":3}}"}
+{"messages_user": "风量调到4档", "func": "climate.set_fan_speed", "args": {"level": 4}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":4}}"}
+{"messages_user": "奥运会几年一届", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "风力调到2档", "func": "climate.set_fan_speed", "args": {"level": 2}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":2}}"}
+{"messages_user": "一公斤等于多少斤", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "副驾座椅加热2档", "func": "seat.set_heating", "args": {"seat": "passenger", "level": 2}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"passenger\",\"level\":2}}"}
+{"messages_user": "把声音弄到95", "func": "media.set_volume", "args": {"value": 95}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":95}}"}
+{"messages_user": "空调风量开到3", "func": "climate.set_fan_speed", "args": {"level": 3}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":3}}"}
+{"messages_user": "右后车窗调到60%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 60}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":60}}"}
+{"messages_user": "上一首", "func": "media.control", "args": {"action": "previous"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"previous\"}}"}
+{"messages_user": "把风开到4档", "func": "climate.set_fan_speed", "args": {"level": 4}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":4}}"}
+{"messages_user": "副驾温度设成32度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 32}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":32}}"}
+{"messages_user": "把温度调到29度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 29}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":29}}"}
+{"messages_user": "主驾座椅加热开到1档", "func": "seat.set_heating", "args": {"seat": "driver", "level": 1}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"driver\",\"level\":1}}"}
+{"messages_user": "带我去人民医院", "func": "navigation.navigate_to", "args": {"destination": "人民医院"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"人民医院\"}}"}
+{"messages_user": "打电话给客服", "func": "phone.call", "args": {"contact": "客服"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"客服\"}}"}
+{"messages_user": "声音开到41", "func": "media.set_volume", "args": {"value": 41}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":41}}"}
+{"messages_user": "风量调到2档", "func": "climate.set_fan_speed", "args": {"level": 2}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":2}}"}
+{"messages_user": "带我去公司", "func": "navigation.navigate_to", "args": {"destination": "公司"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"公司\"}}"}
+{"messages_user": "风速开到4档", "func": "climate.set_fan_speed", "args": {"level": 4}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":4}}"}
+{"messages_user": "风力调到6档", "func": "climate.set_fan_speed", "args": {"level": 6}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":6}}"}
+{"messages_user": "把温度调到30度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 30}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":30}}"}
+{"messages_user": "风速开到7档", "func": "climate.set_fan_speed", "args": {"level": 7}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":7}}"}
+{"messages_user": "把风开到7档", "func": "climate.set_fan_speed", "args": {"level": 7}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":7}}"}
+{"messages_user": "风力调到4档", "func": "climate.set_fan_speed", "args": {"level": 4}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":4}}"}
+{"messages_user": "暂停播放", "func": "media.control", "args": {"action": "pause"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"pause\"}}"}
+{"messages_user": "关上所有车窗", "func": "window.set_position", "args": {"window": "all", "percent": 0}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"all\",\"percent\":0}}"}
+{"messages_user": "继续播放", "func": "media.control", "args": {"action": "play"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"play\"}}"}
+{"messages_user": "把主驾车窗开到23%", "func": "window.set_position", "args": {"window": "driver", "percent": 23}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"driver\",\"percent\":23}}"}
+{"messages_user": "空调开到28度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 28}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":28}}"}
+{"messages_user": "主驾这边调到28度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 28}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":28}}"}
+{"messages_user": "声音开到99", "func": "media.set_volume", "args": {"value": 99}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":99}}"}
+{"messages_user": "主驾这边调到31度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 31}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":31}}"}
+{"messages_user": "带我去火车站", "func": "navigation.navigate_to", "args": {"destination": "火车站"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"火车站\"}}"}
+{"messages_user": "主驾座椅加热开到2档", "func": "seat.set_heating", "args": {"seat": "driver", "level": 2}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"driver\",\"level\":2}}"}
+{"messages_user": "左后那个车窗开到90%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 90}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":90}}"}
+{"messages_user": "风力调到1档", "func": "climate.set_fan_speed", "args": {"level": 1}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":1}}"}
+{"messages_user": "感觉有点憋", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "把温度调到19度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 19}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":19}}"}
+{"messages_user": "你最喜欢什么颜色", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "音量设到45", "func": "media.set_volume", "args": {"value": 45}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":45}}"}
+{"messages_user": "右后车窗调到90%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 90}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":90}}"}
+{"messages_user": "明天股票会涨吗", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "空调开到29度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 29}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":29}}"}
+{"messages_user": "导航到最近的充电站", "func": "navigation.navigate_to", "args": {"destination": "最近的充电站"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"最近的充电站\"}}"}
+{"messages_user": "声音开到34", "func": "media.set_volume", "args": {"value": 34}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":34}}"}
+{"messages_user": "升起左后车窗", "func": "window.set_position", "args": {"window": "rear_left", "percent": 0}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":0}}"}
+{"messages_user": "跳到下一首", "func": "media.control", "args": {"action": "next"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"next\"}}"}
+{"messages_user": "播放音乐", "func": "media.control", "args": {"action": "play"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"play\"}}"}
+{"messages_user": "左后那个车窗开到20%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 20}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":20}}"}
+{"messages_user": "声音开到86", "func": "media.set_volume", "args": {"value": 86}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":86}}"}
+{"messages_user": "副驾温度设成29度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 29}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":29}}"}
+{"messages_user": "音量设到5", "func": "media.set_volume", "args": {"value": 5}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":5}}"}
+{"messages_user": "把声音弄到30", "func": "media.set_volume", "args": {"value": 30}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":30}}"}
+{"messages_user": "把所有车窗升起来", "func": "window.set_position", "args": {"window": "all", "percent": 0}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"all\",\"percent\":0}}"}
+{"messages_user": "把声音弄到45", "func": "media.set_volume", "args": {"value": 45}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":45}}"}
+{"messages_user": "给李医生打电话", "func": "phone.call", "args": {"contact": "李医生"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"李医生\"}}"}
+{"messages_user": "明天会下雨吗", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "音量设到82", "func": "media.set_volume", "args": {"value": 82}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":82}}"}
+{"messages_user": "右后车窗调到40%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 40}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":40}}"}
+{"messages_user": "声音开到82", "func": "media.set_volume", "args": {"value": 82}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":82}}"}
+{"messages_user": "左后那个车窗开到40%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 40}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":40}}"}
+{"messages_user": "导航到公司", "func": "navigation.navigate_to", "args": {"destination": "公司"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"公司\"}}"}
+{"messages_user": "最新有什么科幻片", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "风速开到2档", "func": "climate.set_fan_speed", "args": {"level": 2}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":2}}"}
+{"messages_user": "风量调到3档", "func": "climate.set_fan_speed", "args": {"level": 3}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":3}}"}
+{"messages_user": "把温度调到31度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 31}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":31}}"}
+{"messages_user": "放音乐吧", "func": "media.control", "args": {"action": "play"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"play\"}}"}
+{"messages_user": "打电话给李医生", "func": "phone.call", "args": {"contact": "李医生"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"李医生\"}}"}
+{"messages_user": "副驾温度设成28度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 28}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":28}}"}
+{"messages_user": "音量调到87", "func": "media.set_volume", "args": {"value": 87}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":87}}"}
+{"messages_user": "音量调到86", "func": "media.set_volume", "args": {"value": 86}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":86}}"}
+{"messages_user": "音量调到82", "func": "media.set_volume", "args": {"value": 82}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":82}}"}
+{"messages_user": "停一下音乐", "func": "media.control", "args": {"action": "pause"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"pause\"}}"}
+{"messages_user": "给老婆打电话", "func": "phone.call", "args": {"contact": "老婆"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"老婆\"}}"}
+{"messages_user": "上一曲", "func": "media.control", "args": {"action": "previous"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"previous\"}}"}
+{"messages_user": "带我去最近的充电站", "func": "navigation.navigate_to", "args": {"destination": "最近的充电站"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"最近的充电站\"}}"}
+{"messages_user": "把左后车窗开到66%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 66}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":66}}"}
+{"messages_user": "风速开到1档", "func": "climate.set_fan_speed", "args": {"level": 1}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":1}}"}
+{"messages_user": "主驾座椅加热开到0档", "func": "seat.set_heating", "args": {"seat": "driver", "level": 0}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"driver\",\"level\":0}}"}
+{"messages_user": "NBA 昨天谁赢了", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "把声音弄到70", "func": "media.set_volume", "args": {"value": 70}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":70}}"}
+{"messages_user": "左后那个车窗开到60%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 60}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":60}}"}
+{"messages_user": "风速开到3档", "func": "climate.set_fan_speed", "args": {"level": 3}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":3}}"}
+{"messages_user": "副驾温度设成31度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 31}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":31}}"}
+{"messages_user": "把声音弄到11", "func": "media.set_volume", "args": {"value": 11}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":11}}"}
+{"messages_user": "音量设到11", "func": "media.set_volume", "args": {"value": 11}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":11}}"}
+{"messages_user": "带我去首都机场", "func": "navigation.navigate_to", "args": {"destination": "首都机场"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"首都机场\"}}"}
+{"messages_user": "主驾这边调到32度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 32}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":32}}"}
+{"messages_user": "开一下空调", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "车里有点闷", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "空调开到25度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 25}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":25}}"}
+{"messages_user": "打电话给妈妈", "func": "phone.call", "args": {"contact": "妈妈"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"妈妈\"}}"}
+{"messages_user": "打开空调", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "把左后车窗开到51%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 51}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":51}}"}
+{"messages_user": "导航到万达广场", "func": "navigation.navigate_to", "args": {"destination": "万达广场"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"万达广场\"}}"}
+{"messages_user": "带我去万达广场", "func": "navigation.navigate_to", "args": {"destination": "万达广场"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"万达广场\"}}"}
+{"messages_user": "把温度调到25度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 25}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":25}}"}
+{"messages_user": "空调风量开到2", "func": "climate.set_fan_speed", "args": {"level": 2}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":2}}"}
+{"messages_user": "音量调到99", "func": "media.set_volume", "args": {"value": 99}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":99}}"}
+{"messages_user": "解释一下相对论", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "讲讲三国历史", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "空调开到30度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 30}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":30}}"}
+{"messages_user": "中国首都是哪里", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "把温度调到18度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 18}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":18}}"}
+{"messages_user": "背一首古诗", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "风力调到5档", "func": "climate.set_fan_speed", "args": {"level": 5}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":5}}"}
+{"messages_user": "把右后车窗开到40%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 40}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":40}}"}
+{"messages_user": "音量设到70", "func": "media.set_volume", "args": {"value": 70}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":70}}"}
+{"messages_user": "把温度调到28度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 28}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":28}}"}
+{"messages_user": "帮我算一下 35 乘 28", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "导航到人民医院", "func": "navigation.navigate_to", "args": {"destination": "人民医院"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"人民医院\"}}"}
+{"messages_user": "主驾这边调到29度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 29}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":29}}"}
+{"messages_user": "导航到首都机场", "func": "navigation.navigate_to", "args": {"destination": "首都机场"}, "target": "{\"function\":\"navigation.navigate_to\",\"arguments\":{\"destination\":\"首都机场\"}}"}
+{"messages_user": "把空调打开", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "下一曲", "func": "media.control", "args": {"action": "next"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"next\"}}"}
+{"messages_user": "空调开到23度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 23}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":23}}"}
+{"messages_user": "关好所有车窗", "func": "window.set_position", "args": {"window": "all", "percent": 0}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"all\",\"percent\":0}}"}
+{"messages_user": "把副驾车窗开到52%", "func": "window.set_position", "args": {"window": "passenger", "percent": 52}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"passenger\",\"percent\":52}}"}
+{"messages_user": "把温度调到21度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 21}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":21}}"}
+{"messages_user": "把声音弄到55", "func": "media.set_volume", "args": {"value": 55}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":55}}"}
+{"messages_user": "把声音弄到85", "func": "media.set_volume", "args": {"value": 85}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":85}}"}
+{"messages_user": "空调风量开到5", "func": "climate.set_fan_speed", "args": {"level": 5}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":5}}"}
+{"messages_user": "关闭空调", "func": "climate.set_power", "args": {"state": "off"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"off\"}}"}
+{"messages_user": "帮我翻译这句英文", "func": "system.reject", "args": {"reason": "该请求超出车控指令范围"}, "target": "{\"function\":\"system.reject\",\"arguments\":{\"reason\":\"该请求超出车控指令范围\"}}"}
+{"messages_user": "空气不太流通", "func": "climate.set_power", "args": {"state": "on"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"on\"}}"}
+{"messages_user": "空调风量开到1", "func": "climate.set_fan_speed", "args": {"level": 1}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":1}}"}
+{"messages_user": "空调开到27度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 27}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":27}}"}
+{"messages_user": "空调关掉", "func": "climate.set_power", "args": {"state": "off"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"off\"}}"}
+{"messages_user": "音量调到34", "func": "media.set_volume", "args": {"value": 34}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":34}}"}
+{"messages_user": "风量调到1档", "func": "climate.set_fan_speed", "args": {"level": 1}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":1}}"}
+{"messages_user": "风速开到5档", "func": "climate.set_fan_speed", "args": {"level": 5}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":5}}"}
+{"messages_user": "声音开到87", "func": "media.set_volume", "args": {"value": 87}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":87}}"}
+{"messages_user": "打电话给老婆", "func": "phone.call", "args": {"contact": "老婆"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"老婆\"}}"}
+{"messages_user": "音量设到95", "func": "media.set_volume", "args": {"value": 95}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":95}}"}
+{"messages_user": "把风开到1档", "func": "climate.set_fan_speed", "args": {"level": 1}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":1}}"}
+{"messages_user": "空调风量开到7", "func": "climate.set_fan_speed", "args": {"level": 7}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":7}}"}
+{"messages_user": "把声音弄到82", "func": "media.set_volume", "args": {"value": 82}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":82}}"}
+{"messages_user": "副驾温度设成21度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 21}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":21}}"}
+{"messages_user": "把副驾车窗开到54%", "func": "window.set_position", "args": {"window": "passenger", "percent": 54}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"passenger\",\"percent\":54}}"}
+{"messages_user": "左后那个车窗开到75%", "func": "window.set_position", "args": {"window": "rear_left", "percent": 75}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_left\",\"percent\":75}}"}
+{"messages_user": "声音开到73", "func": "media.set_volume", "args": {"value": 73}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":73}}"}
+{"messages_user": "音量调到73", "func": "media.set_volume", "args": {"value": 73}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":73}}"}
+{"messages_user": "空调开到21度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 21}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":21}}"}
+{"messages_user": "给张经理打电话", "func": "phone.call", "args": {"contact": "张经理"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"张经理\"}}"}
+{"messages_user": "把温度调到27度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 27}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":27}}"}
+{"messages_user": "音量设到85", "func": "media.set_volume", "args": {"value": 85}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":85}}"}
+{"messages_user": "给妈妈打电话", "func": "phone.call", "args": {"contact": "妈妈"}, "target": "{\"function\":\"phone.call\",\"arguments\":{\"contact\":\"妈妈\"}}"}
+{"messages_user": "把空调关了", "func": "climate.set_power", "args": {"state": "off"}, "target": "{\"function\":\"climate.set_power\",\"arguments\":{\"state\":\"off\"}}"}
+{"messages_user": "主驾这边调到26度", "func": "climate.set_temperature", "args": {"zone": "driver", "value": 26}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"driver\",\"value\":26}}"}
+{"messages_user": "暂停", "func": "media.control", "args": {"action": "pause"}, "target": "{\"function\":\"media.control\",\"arguments\":{\"action\":\"pause\"}}"}
+{"messages_user": "副驾温度设成26度", "func": "climate.set_temperature", "args": {"zone": "passenger", "value": 26}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"passenger\",\"value\":26}}"}
+{"messages_user": "空调开到18度", "func": "climate.set_temperature", "args": {"zone": "all", "value": 18}, "target": "{\"function\":\"climate.set_temperature\",\"arguments\":{\"zone\":\"all\",\"value\":18}}"}
+{"messages_user": "风力调到7档", "func": "climate.set_fan_speed", "args": {"level": 7}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":7}}"}
+{"messages_user": "把右后车窗开到66%", "func": "window.set_position", "args": {"window": "rear_right", "percent": 66}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":66}}"}
+{"messages_user": "副驾座椅加热1档", "func": "seat.set_heating", "args": {"seat": "passenger", "level": 1}, "target": "{\"function\":\"seat.set_heating\",\"arguments\":{\"seat\":\"passenger\",\"level\":1}}"}
+{"messages_user": "关闭右后车窗", "func": "window.set_position", "args": {"window": "rear_right", "percent": 0}, "target": "{\"function\":\"window.set_position\",\"arguments\":{\"window\":\"rear_right\",\"percent\":0}}"}
+{"messages_user": "风速开到6档", "func": "climate.set_fan_speed", "args": {"level": 6}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":6}}"}
+{"messages_user": "声音开到3", "func": "media.set_volume", "args": {"value": 3}, "target": "{\"function\":\"media.set_volume\",\"arguments\":{\"value\":3}}"}
+{"messages_user": "风力调到3档", "func": "climate.set_fan_speed", "args": {"level": 3}, "target": "{\"function\":\"climate.set_fan_speed\",\"arguments\":{\"level\":3}}"}

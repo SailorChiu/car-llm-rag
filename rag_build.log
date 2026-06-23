@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+切出 18 个知识块：
+  - 空调系统
+  - 座椅加热与通风
+  - 车窗与天窗
+  - 充电
+  - 胎压
+  - 警告灯
+  - 雨刮
+  - 洗车模式
+  - OTA 升级
+  - 驾驶模式
+  - 能量回收
+  - 灯光系统
+  - 钥匙与解锁
+  - 辅助驾驶
+  - 后备厢与前备厢
+  - 故障与拖车
+  - 蓝牙与多媒体
+  - 语音助手
+
+加载 embedding 模型: BAAI/bge-small-zh-v1.5
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 2666.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+
+索引已保存到 /home/kaifan/car-llm/rag/index（18 块, 维度 512）

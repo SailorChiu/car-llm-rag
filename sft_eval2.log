@@ -1,0 +1,97 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+加载 base: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<01:08,  4.93it/s]Loading weights:  46%|████▌     | 156/338 [00:00<00:00, 641.23it/s]Loading weights:  73%|███████▎  | 247/338 [00:00<00:00, 665.88it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 676.95it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 609.69it/s]
+加载 SFT 适配器: /home/kaifan/car-llm/sft/out
+
+============================================================
+val 集 54 条
+            完全匹配率      函数名(全名)      意图(宽口径)
+------------------------------------------------------------
+base           0.0%           0.0%           9.3%
+SFT           94.4%          96.3%          96.3%
+============================================================
+
+--- SFT 逐函数 函数名准确率 ---
+  climate.set_fan_speed     4/4
+  climate.set_power         5/5
+  climate.set_temperature   12/12
+  media.control             4/4
+  media.set_volume          5/5
+  navigation.navigate_to    6/6
+  phone.call                5/5
+  seat.set_heating          4/4
+  system.reject             2/4
+  window.set_position       5/5
+
+--- 函数名判错 2 条 ---
+  [推荐一部好看的电影]
+    gold: {"function":"system.reject","arguments":{"reason":"该请求超出车控指令范围"}}
+    pred: {"function":"media.control","arguments":{"action":"play"}}
+  [帮我写封请假邮件]
+    gold: {"function":"system.reject","arguments":{"reason":"该请求超出车控指令范围"}}
+    pred: {"function":"mail.reject","arguments":{"reason":"该请求超出车控指令范围"}}
+
+--- 函数对但参数错 1 条 ---
+  [所有车窗都升上去]
+    gold: {"function":"window.set_position","arguments":{"window":"all","percent":0}}
+    pred: {"function":"window.set_position","arguments":{"window":"all","percent":100}}
+
+定性样例（前 6 条）:
+
+[去公司怎么走]  gold: {"function":"navigation.navigate_to","arguments":{"destination":"公司"}}
+  base: ```json
+{
+  "function": "get_direction",
+  "arguments": {
+    "destination": "公司"
+  }
+}
+```
+  SFT : {"function":"navigation.navigate_to","arguments":{"destination":"公司"}}
+
+[我想要21度]  gold: {"function":"climate.set_temperature","arguments":{"zone":"all","value":21}}
+  base: {
+  "function": "set车内温度",
+  "arguments": {
+    "temperature": 21
+  }
+}
+  SFT : {"function":"climate.set_temperature","arguments":{"zone":"all","value":21}}
+
+[切下一首]  gold: {"function":"media.control","arguments":{"action":"next"}}
+  base: ```json
+{
+  "function": "cut_song",
+  "arguments": {}
+}
+```
+  SFT : {"function":"media.control","arguments":{"action":"next"}}
+
+[我想要19度]  gold: {"function":"climate.set_temperature","arguments":{"zone":"all","value":19}}
+  base: {
+  "function": "setWindDirection",
+  "arguments": {
+    "direction": "19"
+  }
+}
+  SFT : {"function":"climate.set_temperature","arguments":{"zone":"all","value":19}}
+
+[放首歌听]  gold: {"function":"media.control","arguments":{"action":"play"}}
+  base: ```json
+{
+  "function": "播放音乐",
+  "arguments": {}
+}
+```
+  SFT : {"function":"media.control","arguments":{"action":"play"}}
+
+[驾驶位弄到26度]  gold: {"function":"climate.set_temperature","arguments":{"zone":"driver","value":26}}
+  base: ```json
+{
+  "function": "set_driver_seat_temperature",
+  "arguments": {
+    "temperature": 26
+  }
+}
+```
+  SFT : {"function":"climate.set_temperature","arguments":{"zone":"driver","value":26}}

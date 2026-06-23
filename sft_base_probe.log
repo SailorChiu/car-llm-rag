@@ -1,0 +1,66 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+加载 base: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<03:23,  1.66it/s]Loading weights:  40%|███▉      | 135/338 [00:00<00:00, 254.22it/s]Loading weights:  62%|██████▏   | 209/338 [00:01<00:00, 237.52it/s]Loading weights:  77%|███████▋  | 259/338 [00:01<00:00, 248.55it/s]Loading weights:  89%|████████▉ | 301/338 [00:01<00:00, 261.50it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 225.38it/s]
+
+========================================================
+val 集 54 条
+指标              base        SFT         
+--------------------------------------------------------
+函数名准确率           0.0%     (无适配器)
+完全匹配率             0.0%     (无适配器)
+========================================================
+
+定性样例（前 6 条）:
+
+[副驾车窗降到67%]  gold: {"function":"window.set_position","arguments":{"window":"passenger","percent":67}}
+  base: ```json
+{
+  "function": "setDriverSideWindow",
+  "arguments": {
+    "windowNumber": 2,
+    "percentage": 67
+  }
+}
+```
+
+[拨打张经理的电话]  gold: {"function":"phone.call","arguments":{"contact":"张经理"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "13800138000"
+  }
+}
+
+[把音量设成82]  gold: {"function":"media.set_volume","arguments":{"value":82}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 82
+  }
+}
+
+[拨打老婆的电话]  gold: {"function":"phone.call","arguments":{"contact":"老婆"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "老婆的电话号码"
+  }
+}
+
+[去人民医院怎么走]  gold: {"function":"navigation.navigate_to","arguments":{"destination":"人民医院"}}
+  base: ```json
+{
+  "function": "navigate",
+  "arguments": {
+    "destination": "人民医院"
+  }
+}
+```
+
+[把音量设成11]  gold: {"function":"media.set_volume","arguments":{"value":11}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 11
+  }
+}

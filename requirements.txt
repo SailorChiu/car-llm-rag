@@ -1,0 +1,8 @@
+# 注意：torch 要单独按 CUDA 版本装，见 README（不要写在这里让它装成 CPU 版）
+transformers>=4.44
+sentence-transformers>=3.0
+faiss-cpu
+peft>=0.12
+datasets>=2.20
+accelerate>=0.33
+bitsandbytes>=0.43.1

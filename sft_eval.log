@@ -1,0 +1,73 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+加载 base: Qwen/Qwen2.5-1.5B-Instruct
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<05:21,  1.05it/s]Loading weights:  58%|█████▊    | 195/338 [00:01<00:00, 243.58it/s]Loading weights:  83%|████████▎ | 282/338 [00:01<00:00, 284.11it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 241.55it/s]
+加载 SFT 适配器: /home/kaifan/car-llm/sft/out
+
+============================================================
+val 集 54 条
+            完全匹配率      函数名(全名)      意图(宽口径)
+------------------------------------------------------------
+base           0.0%           0.0%           9.3%
+SFT           74.1%          88.9%          83.3%
+============================================================
+
+定性样例（前 6 条）:
+
+[副驾车窗降到67%]  gold: {"function":"window.set_position","arguments":{"window":"passenger","percent":67}}
+  base: ```json
+{
+  "function": "setDriverSideWindow",
+  "arguments": {
+    "windowNumber": 2,
+    "percentage": 67
+  }
+}
+```
+  SFT : {"function":"window.set_position","arguments":{"window":"passenger","percent":67}}
+
+[拨打张经理的电话]  gold: {"function":"phone.call","arguments":{"contact":"张经理"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "13800138000"
+  }
+}
+  SFT : {"function":"phone.call","arguments":{"contact":"张经理"}}
+
+[把音量设成82]  gold: {"function":"media.set_volume","arguments":{"value":82}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 82
+  }
+}
+  SFT : {"function":"media.set_volume","arguments":{"percent":82}}
+
+[拨打老婆的电话]  gold: {"function":"phone.call","arguments":{"contact":"老婆"}}
+  base: {
+  "function": "拨打电话",
+  "arguments": {
+    "phone_number": "老婆的电话号码"
+  }
+}
+  SFT : {"function":"phone.call","arguments":{"contact":"老婆"}}
+
+[去人民医院怎么走]  gold: {"function":"navigation.navigate_to","arguments":{"destination":"人民医院"}}
+  base: ```json
+{
+  "function": "navigate",
+  "arguments": {
+    "destination": "人民医院"
+  }
+}
+```
+  SFT : {"function":"navigation.navigate_to","arguments":{"destination":"人民医院"}}
+
+[把音量设成11]  gold: {"function":"media.set_volume","arguments":{"value":11}}
+  base: {
+  "function": "set_volume",
+  "arguments": {
+    "volume": 11
+  }
+}
+  SFT : {"function":"media.set_volume","arguments":{"percent":11}}
