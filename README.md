@@ -149,3 +149,24 @@ sft/eval_sft.py      base vs SFT 三指标 + 逐条错误诊断
   **function-name accuracy 0%→96%** over the base model, using a **template-disjoint val split**
   and one **error-driven data iteration** (contrastive examples to fix argument-name / intent
   confusions) on a single 8 GB RTX 4060.
+
+
+---
+
+## 🤖 Agent / 工具调用 Demo
+
+> **一句话总结**：本 demo 演示了 意图识别 → 工具调用（RAG / mock 车控）→ 结果回填 → 多轮记忆 的闭环。
+
+详见 [agent/README.md](agent/README.md)。
+
+```bash
+cd ~/car-llm && source .venv/bin/activate
+python agent/agent_demo.py
+```
+
+实现要点：
+
+- **意图识别**：引导 Qwen2.5-1.5B 输出 function-calling 风格 JSON（`query_manual` / `set_climate` / `control_window` / `chitchat`）
+- **工具调用**：RAG 检索（复用现有 bge+FAISS）/ 车控 Mock（⚠️ MOCK / 演示用，非真实车控）
+- **多轮记忆**：`messages` 历史列表 + `MEMORY` dict 跨轮记录用户偏好
+- **小模型容错**：正则抠 JSON + parse 失败 fallback，1.5B 模型格式不稳时不崩溃
