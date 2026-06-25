@@ -159,3 +159,52 @@ bge-small-zh  MEMORY dict        MEMORY dict
 - `rag/retrieve.py` — bge-small-zh + FAISS 检索器（被 `query_manual` 复用）
 - `rag/query.py` — 原始 RAG 问答入口
 - `config.py` — 模型路径、超参（LLM_MODEL / EMB_MODEL / TOP_K）
+
+---
+
+## 📊 工具调用评测（eval_tools.py）
+
+> 评测环境：WSL2 · RTX 4060 Laptop 8G · Qwen2.5-1.5B-Instruct · 30 条标注样本
+
+### 复现命令
+
+```bash
+cd ~/car-llm && source .venv/bin/activate
+python agent/eval_tools.py
+# 逐条结果写入 agent/eval_result.csv
+```
+
+### 真实评测结果
+
+```
+总样本数:            30
+JSON 一次解析成功率: 30/30 = 100.0%
+工具选对率:          29/30 = 96.7%
+
+分工具准确率:
+  query_manual          9/10  [██████████████████░░]
+  set_climate           7/7   [████████████████████]
+  control_window        7/7   [████████████████████]
+  chitchat              6/6   [████████████████████]
+```
+
+### 唯一漏报 bad case
+
+| # | query | 期望 | 实际预测 | parse |
+|---|-------|------|----------|-------|
+| 09 | 怎么调节方向盘高度 | query_manual | control_wheel_height | OK |
+
+**归因**：JSON 解析成功，但模型幻觉出了 `control_wheel_height` 这个不在工具列表里的名称，
+属于「工具名幻觉」而非「格式错误」。
+实际运行时 agent_demo 的 dispatch 逻辑会将未知工具名 fallback 到 chitchat，不会崩溃。
+可通过在 prompt 里更强调"只能从给定工具名中选一个"来修复。
+
+### 评测设计说明
+
+| 指标 | 含义 |
+|------|------|
+| JSON 一次解析成功率 | 模型首次输出能被正则+json 成功解析；走兜底=失败 |
+| 工具选对率 | 解析出的工具名 == 黄金标注工具名 |
+
+评测直接 import `agent_demo._extract_json / _generate`，与 demo 运行时完全同一套解析逻辑，
+指标可信、可复现。
